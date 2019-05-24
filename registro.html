@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Proyecto Final</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+
+  <!--   ELIMINAR
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+-->
+
+  <!-- FUENTES GOOGLE -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- FRAMEWORK BOOTSTRAP -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ARCHIVOS CSS AUXILIARES -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link type="text/css" href="css/argon.css?v=1.0.0" rel="stylesheet">
+  <link href="lib/nucleo.css" rel="stylesheet">
+  <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--========================== ENCABEZADO ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">Provident -- BI <br></a></h1>
+        <h1><a href="#intro" class="scrollto">Bienvenido <br></a></h1>        
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Inicio</a></li>
+          <li class="menu-has-children"><a>Reportes</a>
+            <ul>
+              <li><a href="#portfolio">Kpi</a></li>
+              <li><a href="#about">Graficos</a></li>
+              <li><a href="#services">Descargas</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Requerimientos</a></li>
+          <li><a href="#team">Manuales</a></li>
+          <li><a onclick="Salir()">Salir</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FIN ENCABEZADO -->
+
+  <!--==========================
+   Pagina Principal
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/prov/prov1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/prov/prov2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/prov/prov1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/prov/prov2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/prov/prov1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+  <!--==========================
+      KPI's
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">KPI´s</h3>
+          <p>Aquí se muestran los indicadores relevantes del Negocio.</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-mex">México</li>
+              <li data-filter=".filter-nor">Norte</li>
+              <li data-filter=".filter-cen">Centro</li>
+              <li data-filter=".filter-sur">Sureste</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mex wow fadeInUp">
+            <div class="portfolio-wrap">
+               <table style="width:95%;" align="center">
+                  <tr>
+                  <th colspan="6" style="background-color:#337ab7;color:white; text-align: center;">México</th>
+                  </tr>
+                  <tr style="background-color:#32A9EE;color:white;">
+                  <th style="width: 15%">Semana</th>
+                  <th style="width: 15%">#ND</th>
+                  <th style="width: 15%">#CF</th>
+                  <th style="width: 15%">%C/D</th>
+                  <th style="width: 15%">%MQT</th>
+                  <th style="width: 15%">%MAT</th>
+                  </tr>
+                </table>
+                <div class="bg tablescroll">
+                  <table style="width:95%;" align="center">
+                    <tr>
+                      <td style="width: 16%">201919</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201918</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201917</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201916</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201915</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201914</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201913</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201912</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201911</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201910</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201909</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201908</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201907</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                  </table>
+                </div>
+
+              <div class="portfolio-info">
+                <h4><a>Resultados</a></h4>
+                <p>Últimas 13 Semanas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-nor wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <table style="width:95%;" align="center">
+                  <tr>
+                  <th colspan="6" style="background-color:#337ab7;color:white; text-align: center;">Norte</th>
+                  </tr>
+                  <tr style="background-color:#32A9EE;color:white;">
+                  <th style="width: 15%">Semana</th>
+                  <th style="width: 15%">#ND</th>
+                  <th style="width: 15%">#CF</th>
+                  <th style="width: 15%">%C/D</th>
+                  <th style="width: 15%">%MQT</th>
+                  <th style="width: 15%">%MAT</th>
+                  </tr>
+                </table>
+                <div class="bg tablescroll">
+                  <table style="width:95%;" align="center">
+                    <tr>
+                      <td style="width: 16%">201919</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201918</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201917</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201916</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201915</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201914</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201913</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201912</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201911</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201910</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201909</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201908</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201907</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                  </table>
+                </div>
+
+              <div class="portfolio-info">
+                <h4><a>Resultados</a></h4>
+                <p>Últimas 13 Semanas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cen wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <table style="width:95%;" align="center">
+                  <tr>
+                  <th colspan="6" style="background-color:#337ab7;color:white; text-align: center;">Centro</th>
+                  </tr>
+                  <tr style="background-color:#32A9EE;color:white;">
+                  <th style="width: 15%">Semana</th>
+                  <th style="width: 15%">#ND</th>
+                  <th style="width: 15%">#CF</th>
+                  <th style="width: 15%">%C/D</th>
+                  <th style="width: 15%">%MQT</th>
+                  <th style="width: 15%">%MAT</th>
+                  </tr>
+                </table>
+                <div class="bg tablescroll">
+                  <table style="width:95%;" align="center">
+                    <tr>
+                      <td style="width: 16%">201919</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201918</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201917</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201916</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201915</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201914</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201913</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201912</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201911</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201910</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201909</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201908</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201907</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                  </table>
+                </div>
+
+              <div class="portfolio-info">
+                <h4><a>Resultados</a></h4>
+                <p>Últimas 13 Semanas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-sur wow fadeInUp">
+            <div class="portfolio-wrap">
+              <table style="width:95%;" align="center">
+                  <tr>
+                  <th colspan="6" style="background-color:#337ab7;color:white; text-align: center;">Sureste</th>
+                  </tr>
+                  <tr style="background-color:#32A9EE;color:white;">
+                  <th style="width: 15%">Semana</th>
+                  <th style="width: 15%">#ND</th>
+                  <th style="width: 15%">#CF</th>
+                  <th style="width: 15%">%C/D</th>
+                  <th style="width: 15%">%MQT</th>
+                  <th style="width: 15%">%MAT</th>
+                  </tr>
+                </table>
+                <div class="bg tablescroll">
+                  <table style="width:95%;" align="center">
+                    <tr>
+                      <td style="width: 16%">201919</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201918</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201917</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201916</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201915</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201914</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201913</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201912</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201911</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201910</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201909</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201908</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%">201907</td>
+                      <td style="width: 15%">5</td>
+                      <td style="width: 15%">10</td>
+                      <td style="width: 15%">98%</td>
+                      <td style="width: 15%">85%</td>
+                      <td style="width: 15%">70%</td>
+                    </tr>
+                  </table>
+                </div>
+
+              <div class="portfolio-info">
+               <h4><a>Resultados</a></h4>
+                <p>Últimas 13 Semanas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!--==========================
+     Graficos de Desempeño
+    ============================-->  
+
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Graficos de Desempeño.</h3>
+          <p>Aquí podras observar el Desempeño del Negocio.</p>
+        </header>
+
+
+        <div class="col-xl-3 col-lg-6 fadeInUp wow">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Total Clientes</h5>
+                  <span class="h2 font-weight-bold mb-0">870,897</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+              </div>
+                <p class="mt-3 mb-0 text-muted text-sm">
+                  <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 8.48%</span>
+                  <span class="text-nowrap">Actual vs Mes Anterior</span>
+                </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-3 col-lg-6 fadeInUp wow">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Nuevos Clientes</h5>
+                  <span class="h2 font-weight-bold mb-0">8,356</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                    <i class="fas fa-handshake"></i>                    
+                  </div>
+                </div>
+              </div>
+                <p class="mt-3 mb-0 text-muted text-sm">
+                  <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 1.48%</span>
+                  <span class="text-nowrap">Actual vs Mes Anterior</span>
+                </p>
+              </div>
+            </div>          
+          </div>
+
+            <div class="col-xl-3 col-lg-6 fadeInUp wow">
+              <div class="card card-stats mb-4 mb-xl-0">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Clientes Frecuentes</h5>
+                      <span class="h2 font-weight-bold mb-0">2,924</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                        <i class="fas fa-user-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
+                    <span class="text-nowrap">Actual vs Mes Anterior</span>
+                  </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-3 col-lg-6 fadeInUp wow">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Desempeño</h5>
+                  <span class="h2 font-weight-bold mb-0">72,65%</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
+                <span class="text-nowrap">Actual vs Mes Anterior</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-8 mb-5 mb-xl-0 fadeInUp wow">
+          <div class="card bg-gradient-default shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-light ls-1 mb-1">Overview</h6>
+                  <h2 class="text-white mb-0">Valor de Ventas </h2>
+                </div>
+                <div class="col">
+                  <ul class="nav nav-pills justify-content-end">
+                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="$" data-suffix="k">
+                      <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab">
+                        <span class="d-none d-md-block">Mes</span>
+                        <span class="d-md-none">M</span>
+                      </a>
+                    </li>
+                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
+                      <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
+                        <span class="d-none d-md-block">Semana</span>
+                        <span class="d-md-none">W</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                <!-- Chart wrapper -->
+                <canvas id="chart-sales" class="chart-canvas"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 fadeInUp wow">
+          <div class="card shadow">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1">Desempeño</h6>
+                  <h2 class="mb-0">Total</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chart">
+                <canvas id="chart-orders" class="chart-canvas"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Descargas Reportes
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Reportes</h3>
+          <p>Aquí podras descargar los reportes a los que tienes acceso</p>
+        </header>
+
+        <div class="row">
+          <div class="col-xl-3 col-lg-6 fadeInUp wow">
+            <div class="card card-stats mb-4 mb-xl-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h5 class="h4 card-title text-uppercase font-weight-bold mb-0">Reporte Usuario 1</h5>
+                    <span class="text-muted mb-0">Este reportes muesta los datos solicitados</span>
+                  </div>                
+                </div>
+                <a href="" class="btn btn-sm btn-primary float-right" onclick="descargarrep()">Descargar</a>
+                </p>
+              </div>
+            </div>          
+          </div>
+
+          <div class="col-xl-3 col-lg-6 fadeInUp wow">
+            <div class="card card-stats mb-4 mb-xl-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h5 class="h4 card-title text-uppercase font-weight-bold mb-0">Reporte Usuario 2</h5>
+                    <span class="text-muted mb-0">Este reportes muesta los datos solicitados</span>
+                  </div>                
+                </div>
+                <a href="" class="btn btn-sm btn-primary float-right" onclick="descargarrep()">Descargar</a>
+                </p>
+              </div>
+            </div>          
+          </div>
+
+          <div class="col-xl-3 col-lg-6 fadeInUp wow">
+            <div class="card card-stats mb-4 mb-xl-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h5 class="h4 card-title text-uppercase font-weight-bold mb-0">Reporte Usuario 3</h5>
+                    <span class="text-muted mb-0">Este reportes muesta los datos solicitados</span>
+                  </div>                
+                </div>
+                <a href="" class="btn btn-sm btn-primary float-right" onclick="descargarrep()">Descargar</a>
+                </p>
+              </div>
+            </div>          
+          </div>
+
+          <div class="col-xl-3 col-lg-6 fadeInUp wow">
+            <div class="card card-stats mb-4 mb-xl-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h5 class="h4 card-title text-uppercase font-weight-bold mb-0">Reporte Usuario 4</h5>
+                    <span class="text-muted mb-0">Este reportes muesta los datos solicitados</span>
+                  </div>                
+                </div>
+                <a href="" class="btn btn-sm btn-primary float-right" onclick="descargarrep()">Descargar</a>
+                </p>
+              </div>
+            </div>          
+          </div>
+
+          <div class="col-xl-3 col-lg-6 fadeInUp wow">
+            <div class="card card-stats mb-4 mb-xl-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h5 class="h4 card-title text-uppercase font-weight-bold mb-0">Reporte Usuario 5</h5>
+                    <span class="text-muted mb-0">Este reportes muesta los datos solicitados</span>
+                  </div>                
+                </div>
+                <a href="" class="btn btn-sm btn-primary float-right" onclick="descargarrep()">Descargar</a>
+                </p>
+              </div>
+            </div>          
+          </div>        
+        </div>
+      </div>
+    </section>
+   
+
+    <!--==========================
+      Requerimientos
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+        <div class="row contact-info">  
+        </div>
+
+        <div class="form">
+           <div class="row contact-info">
+              <div class="col-md-4">
+                <div class="contact-address">
+                  <i class="icon ion-wrench"></i>
+                  <ion-icon name="build"></ion-icon>
+                  <h3>Requerimientos</h3>     
+                  <p>Aquí puedes solicitar algún requerimiento en especifico</p>             
+                </div>
+              </div>
+            </div>         
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm" name="formcont" id="formcont">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="reqname" class="form-control" id="reqname" placeholder="Tu Nombre:" data-rule="minlen:4" data-msg="Por favor capture su Nombre" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <textarea class="form-control" id="reqdes1" name="reqdes1" rows="3" data-rule="required" data-msg="Introduzca un resumen" placeholder="Resumen"></textarea>                
+                <div class="validation"></div>
+              </div>
+              <div class="form-group  col-md-6">
+                <textarea class="form-control" id="reqdes2" name="reqdes2" rows="7" data-rule="required" data-msg="Introduzca su requerimiento" placeholder="Requerimiento"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="form-group  col-md-6">                
+                <select class="form-control" id="reqdep" name="reqdep" data-rule="required" data-msg="Seleccione una opción">
+                  <option value="" selected>Departamento...</option>
+                  <option value="1a">Direccion</option>
+                  <option value="2a">Ventas y Servicio</option>
+                  <option value="3a">Marketing</option>
+                  <option value="4a">Finanzas</option>
+                  <option value="5a">Legal</option>
+                  <option value="6a">RH</option>
+                  <option value="7a">Administración</option>
+                </select>
+                 <div class="validation"></div>
+              </div>
+
+              <div class="form-group  col-md-6">                
+                <select class="form-control" id="reqproy" name="reqproy">
+                  <option value="" selected>Proyecto...</option>
+                  <option value="1b">Ad hoc</option>
+                  <option value="2b">Analisis</option>
+                  <option value="3b">Reporte</option>
+                  <option value="4b">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group  col-md-6">                
+                <select class="form-control" id="reqact" name="reqact">
+                  <option value="" selected>Actividad...</option>
+                  <option value="1c">No puedo Trabajar</option>
+                  <option value="2c">Puedo Trabajar</option>
+                  <option value="3c">Complemento para mi Trabajo</option>
+                  <option value="4c">Nuevo Proyecto</option>
+                </select>
+              </div>
+            </div>            
+            <div class="text-center">
+              <button type="submit" onclick="DatosForm()">Solicitar</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Modal Envio de Requerimiento -->
+    <div class="modal fade" id="ModalComent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Req#00000001</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <center>Gracias por usar nuestro sistema de Requermientos.</center>
+           <hr>
+           <center>Este al pendiente de su Email, para el seguimiento del Requerimiento</center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success btn-xs" onclick="cerrarmodalcom()" ><span class="ion ion-android-checkbox"></span> OK </button>           
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+    <!--==========================
+      Equipo
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Manuales</h3>
+          <p>Seleccione el manual que requiere consultar</p>
+        </div>
+
+        <div class="row">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-sur wow fadeInUp">
+            <div class="portfolio-wrap">
+              <table style="width:95%;" align="center">                  
+                  <tr style="background-color:#337ab7;color:white;">
+                  <th style="width: 20%">Tipo</th>
+                  <th style="width: 65%">Nombre</th>
+                  <th style="width: 15%">Archivo</th>
+                  </tr>
+                  <tr>
+                    <td> PDF </td>
+                    <td> Manual de Usuario</td>
+                    <td>
+                      <center>
+                        <button type="button" class="btn btn-warning btn-sm" onclick="descargar()"><span class="fa fa-download"></span></button>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> PDF </td>
+                    <td> Mikipedia</td>
+                    <td>
+                      <center>
+                        <button type="button" class="btn btn-warning btn-sm" onclick="descargar()"><span class="fa fa-download"></span></button>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> PDF </td>
+                    <td> Manual KPI</td>
+                    <td>
+                      <center>
+                        <button type="button" class="btn btn-warning btn-sm" onclick="descargar()"><span class="fa fa-download"></span></button>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> PDF </td>
+                    <td> Definiciones Mex</td>
+                    <td>
+                      <center>
+                        <button type="button" class="btn btn-warning btn-sm" onclick="descargar()"><span class="fa fa-download"></span></button>
+                      </center>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> PDF </td>
+                    <td> Definiciones UK</td>
+                    <td>
+                      <center>
+                        <button type="button" class="btn btn-warning btn-sm" onclick="descargar()"><span class="fa fa-download"></span></button>
+                      </center>
+                    </td>
+                  </tr>
+                   
+                  </table>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Login Redes Sociales -->
+    <div id="ModalRedes" class="modal fade">
+      <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="icon-box" >
+              <i class="ion ion-android-close"></i>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+            <h4>Ooops!</h4> 
+            <p>Algo no funciona. Revise su conexion o contacte al Administrador.</p>
+            <button class="btn btn-success" data-dismiss="modal">Salir</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy;<strong>Roberto Elvira Enriquez</strong>.
+      </div>
+      <div class="credits">
+        Diseñado con <a href="https://getbootstrap.com//">Bootstrap y Jquery</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- LIBRERIAS JS -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>  
+  <script src="js/graficos/chart.js/dist/Chart.min.js"></script>
+  <script src="js/graficos/chart.js/dist/Chart.extension.js"></script>  
+  <script src="js/js/argon.js?v=1.0.0"></script>
+  
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!-- Scripts funcionales -->
+  <script> 
+    function cerrarmodal() {
+      $('#infomodal').modal('hide')
+    }
+
+    function cerrarmodalcom() {
+      $('#ModalComent').modal('hide')
+      LimpiaFromCont()
+    }    
+
+    function DatosForm() {
+      var rqreqname = $("#reqname").val();
+      var rqreqdes1 = $("#reqdes1").val();
+      var rqreqdes2 = $("#reqdes2").val();
+      var rqreqdep = $("#reqdep").val();
+      var rqreqproy = $("#reqproy").val();
+      var rqreqact = $("#reqact").val();
+      
+      if (rqreqname != "" && rqreqdes1 != "" && rqreqdes2 != "" && rqreqdep != "" && rqreqproy != "" && rqreqact != "")  
+      {
+          $('#ModalComent').modal('show');
+      } 
+      else 
+      {
+        alert("Debe completar el Formulario");
+      }
+    }
+
+    function LimpiaFromCont() {
+      document.getElementById("formcont").reset();
+    }
+
+    function descargar() {
+      alert("El documento no esta disponible");
+    }
+
+    function descargarrep() {
+      alert("Error al descargar el Reporte, Intente nuevamente o cantacte al Administrador");
+    }
+
+    function Salir()
+    {      
+      var mensaje;
+      var opcion = confirm("Al Salir se Cerrar su Sesión y Necesitara volver a Logearse para Regresar");
+      if (opcion == true) {
+        /*mensaje = "Saliendo del Modulo";*/
+        location.href ="index.html";
+      } else {
+        /*mensaje = "Operacion Cancelada";*/
+      }
+    }
+        
+  </script>
+</body>
+</html>
